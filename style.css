@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #669999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Georgia", sans-serif;
+
+  position: relative;
+}
+
+.container {
+  background-color: #fff;
+  max-width: 500px;
+  height: auto;
+  padding: 28px 32px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+.search-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #1f2e2e;
+  position: relative;
+}
+.search-box input {
+  color: #1f2e2e;
+  width: 80%;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-left: 32px;
+}
+.search-box input::placeholder {
+  color: #1f2e2e;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.search-box button {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: #dff6ff;
+  border-radius: 50%;
+  font-size: 22px;
+}
+.search-box button:hover {
+  color: #fff;
+  background-color: #1f2e2e;
+}
+.fa-location-dot {
+  position: absolute;
+  color: #1f2e2e;
+  font-size: 28px;
+}
+.weather {
+  margin-top: 30px;
+  text-align: center;
+  display: none;
+  color: #010101;
+}
+
+.weather h1 {
+  font-size: 80px;
+  font-weight: 600;
+}
+.weather h2 {
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.weather-image i {
+  font-size: 120px;
+}
+
+.details {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.details i {
+  font-size: 80px;
+}
+.details p {
+  font-size: 28px;
+}
+.error {
+  color: #ff3300;
+  text-align: center;
+  margin-top: 20px;
+  display: none;
+  font-size: 24px;
+}
+.fa-sun {
+  color: #ffcc00;
+}
+.fa-cloud-rain {
+  color: #0066ff;
+}
+.fa-cloud {
+  color: #666699;
+}
+
+@media (max-width: 575px) {
+  .search-box input {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .search-box input::placeholder {
+    color: #1f2e2e;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+
+  .search-box button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+  .weather h1 {
+    font-size: 50px;
+  }
+  .weather h2 {
+    font-size: 35px;
+  }
+
+  .weather-image i {
+    font-size: 80px;
+  }
+  .details {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .details i {
+    font-size: 50px;
+  }
+}
