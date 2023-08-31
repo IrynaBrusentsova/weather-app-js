@@ -13,8 +13,6 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "Georgia", sans-serif;
-
-  position: relative;
 }
 
 .container {
@@ -120,10 +118,7 @@ body {
     font-weight: 400;
   }
   .search-box input::placeholder {
-    color: #1f2e2e;
-    font-weight: 400;
     font-size: 16px;
-    text-transform: capitalize;
   }
 
   .search-box button {
