@@ -11,6 +11,7 @@ console.log(searchButton);
 const weatherIcon = document.querySelector(".weather-image i");
 const weather = document.querySelector(".weather");
 const error = document.querySelector(".error");
+
 async function checkWeather(city) {
   const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
   if (response.status === 404) {
@@ -34,7 +35,7 @@ async function checkWeather(city) {
   } else if (data.weather[0].main == "Mist") {
     weatherIcon.className = "fa-solid fa-cloud-mist";
   } else if (data.weather[0].main == "Drizzle") {
-    weatherIcon.className = "fa-solid fa-cloud-drizzle";
+    weatherIcon.className = "fa-solid fa-rain";
   }
 
   weather.style.display = "block";
@@ -53,4 +54,4 @@ searchInput.addEventListener("keydown", (e) => {
   }
 });
 
-// keyCode this is Enter
+// keyCode  is Enter
